@@ -21,3 +21,27 @@
 .search-input::placeholder {
 	color: #000;
 }
+
+@media (max-width: 600px) {
+	.nav {
+		flex-wrap: wrap;
+	}
+
+	.nav-link {
+		flex: 1 1 50%;
+	}
+
+	.search-input {
+		text-align: center;
+	}
+}
+
+@media (max-width: 400px) {
+	.nav-link {
+		flex: 1 1 100%;
+	}
+
+	.nav-link--search {
+		order: 1;
+	}
+}
